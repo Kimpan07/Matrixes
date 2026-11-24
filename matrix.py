@@ -74,7 +74,7 @@ def loadtxt(fil):
     table=[]
     with open(fil) as file:
         for line in file:
-            table.append([float(x) for x in line.split()])
+            table.append([x for x in line.split()])
     return table
 
             
